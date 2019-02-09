@@ -14,7 +14,7 @@ html {
 
 body {
     font-family: sans-serif;
-    color: #fff;
+    color: #000;
     background: #000;
 }
 
@@ -29,6 +29,7 @@ header {
   padding: 2rem;
   margin: 0;
   align-items: center;
+  color: #FFF;
 }
 
 nav ul {
@@ -49,9 +50,9 @@ ul li a {
 
 article {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
   margin: 0;
   padding: 2rem;
 }
@@ -81,24 +82,16 @@ section {
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
+    padding: 0;
+    margin: 0;
 }
 
 .text {
-    background: #FFF;
-    color: #000; /* double check this because it wasn't in the instructions */
-    padding: 2rem 4rem;
+    padding: 0 2rem;
     margin: 0;
     font-size: 100%;
     line-height: 1.5rem;
-}
-
-#lion .photo {
-  color: #000;
-}
-
-#tiger .photo {
-  color: #000;
 }
 
 footer {
@@ -136,25 +129,26 @@ footer p {
 /* --- you may ADD other link pseudo classes for
         specific articles or sections to improve CONTRAST --- */
 
-a {
-    color: #379CB2;
-}
-a:hover {
-    color: #82E8FF;
+        a {
+            color: #379CB2;
+        }
+        a:hover {
+            color: #82E8FF;
+        }
+
+
+#cougar a {
+    color: #FFF;
 }
 
-#cougar .photo a {
-  color: #000;
+#cougar a:hover {
+    color: #1A4A51;
 }
 
-#cougar .photo a:hover {
-  color: #333;
+#lion a, #tiger a {
+    color: #236170;
 }
 
-#lion .photo a, #tiger .photo a {
-  color: #236170;
-}
-
-#lion .photo a:hover, #tiger .photo a:hover {
-  color: #000;
+#lion a:hover, #tiger a:hover {
+    color: #1A4A51;
 }
